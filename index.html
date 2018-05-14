@@ -1,12 +1,474 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>BS Dashboard</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<head>
+<title>BS Dashboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/dbicons.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-    <body>
+<body>
 
-    </body>
+	<div class="container-all">
+
+		<aside class="hidden-xs hidden-sm">
+			<header class="header">
+				<div class="avatar">
+					<img src="img/avatar.svg" alt="avatar" style="width: 48px; height: 48px; border-radius: 50px;">
+					<h2>Hoang Nguyen</h2>
+				</div>
+			</header>
+			<nav>
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#"><i class="dbicon-dash"></i>Dashboard</a></li>
+					<li><a href="#"><i class="dbicon-course"></i>Course</a></li>
+					<li><a href="#"><i class="dbicon-exam"></i>Exam</a></li>
+					<li><a href="#"><i class="dbicon-question"></i>Q&A</a></li>
+					<li><a href="#"><i class="dbicon-news"></i>News</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<main>
+			<header>
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header header">
+							<div class="nav navbar-nav">
+								<button type="button" class="btn btn-link"><i class="dbicon-user"></i></button>
+								<button type="button" class="btn btn-link"><i class="dbicon-comments"></i></button>
+								<button type="button" class="btn btn-link"><i class="dbicon-bell"></i></button>
+							</div>
+							<a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    </button>
+						</div>
+
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<form class="navbar-form" action="">
+							    <div class="input-group">
+							      	<input type="text" class="form-control" placeholder="Type for search" name="Search">
+							      	<div class="input-group-btn">
+							        <button class="btn btn-default" type="submit"><i class="dbicon-search"></i></button>
+							      </div>
+							    </div>
+							</form>
+
+						    <div class="nav navbar-nav user">
+						    	<div class="user-icons">
+	                                <a href="" class="btn navbar-btn btn-link" title="Edit"><i class="dbicon-pencil"></i></a>
+	                                <button type="button" class="btn navbar-btn btn-link" data-toggle="modal" data-target="#myModal" title="Logout"><i class="dbicon-logout"></i></button>
+                                </div>
+
+								<div class="user-block hidden-xs">
+									<img src="img/avatar.svg" alt="avatar" style="border-radius: 50%;">
+									<div class="user-info">
+		                            	<h3>
+		                            		Hoang Nguyen
+		                            		<i class="dbicon-star"></i>
+		                            		<i class="dbicon-star"></i>
+		                            		<i class="dbicon-star"></i>
+		                            		<i class="dbicon-star"></i>
+		                            		<i class="dbicon-star"></i>
+		                            	</h3>
+		                            	<h4>
+		                            		student <i>&bull;</i> <a href="#">Learn more</a>
+		                            	</h4>
+		                            	<p><i class="dbicon-award"></i>8,782 exp</p>
+		                            </div>
+								</div>
+                            </div>
+
+							<ul class="nav navbar-nav" id="content-nav">
+								<li><a href="#">Knowledge</a></li>
+								<li><a href="#">Course</a></li>
+								<li><a href="#">Exam</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Activity</a></li>
+								<li><a href="#">Friends</a></li>
+							</ul>
+						</div>
+				</nav>
+			</header>
+
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+<!-- PRVY PANEL A -->
+						<div class="col-md-4 col-sm-6">
+							<div class="main-panel">
+
+								<ul class="nav nav-tabs text-center" id="panel-1">
+									<li class="active"><a data-toggle="tab" href="#menu1a"><b>12</b><br>Done course</a></li>
+									<li><a data-toggle="tab" href="#menu1b"><b>3</b><br>Unfinished course</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div id="menu1a" class="tab-pane fade in active">
+										<div class="panel-group">
+
+											<div class="list-group">
+												  <a href="#" class="list-group-item">Basic for UX designer</a>
+												  <a href="#" class="list-group-item">10 steps to improve your wireframe</a>
+												  <a href="#" class="list-group-item">A Better Way To Request App Ratings </a>
+												  <a href="#" class="list-group-item">How To Speed Up Your Wordpress</a>
+
+											  <div class="panel panel-default">
+											    <div id="collapse1a" class="panel-collapse collapse">
+											      <ul class="list-group">
+											        <a href="#" class="list-group-item">One</a>
+											        <a href="#" class="list-group-item">Two</a>
+											        <a href="#" class="list-group-item">Three</a>
+											      </ul>
+											    </div>
+
+											    <div class="panel-heading text-right">
+											        <a data-toggle="collapse" href="#collapse1a">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+											    </div>
+
+											  </div>
+											</div>
+										</div>
+									</div>
+<!-- PRVY PANEL B -->
+									<div id="menu1b" class="tab-pane fade in">
+										<div class="panel-group">
+
+											<div class="list-group">
+												  <a href="#" class="list-group-item">Hyper Text Markup Language</a>
+												  <a href="#" class="list-group-item">Cascading Style Sheets</a>
+												  <a href="#" class="list-group-item">JavaScript</a>
+												  <a href="#" class="list-group-item">WebAssembly</a>
+
+											  <div class="panel panel-default">
+											    <div id="collapse1b" class="panel-collapse collapse">
+											      <ul class="list-group">
+											        <a href="#" class="list-group-item">One</a>
+											        <a href="#" class="list-group-item">Two</a>
+											        <a href="#" class="list-group-item">Three</a>
+											      </ul>
+											    </div>
+
+											    <div class="panel-heading text-right">
+											        <a data-toggle="collapse" href="#collapse1b">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+											    </div>
+
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!-- DRUHY PANEL A -->
+						<div class="col-md-4 col-sm-6">
+							<div class="main-panel">
+
+								<ul class="nav nav-tabs text-center" id="panel-2">
+									<li class="active"><a data-toggle="tab" href="#menu2a"><b>27</b><br>Asking questions</a></li>
+									<li><a data-toggle="tab" href="#menu2b"><b>7</b><br>Answered questions</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div id="menu2a" class="tab-pane fade in active">
+										<div class="panel-group">
+
+											<div class="list-group">
+												  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 12</i>How to make good logo?</a>
+												  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 3</i>What are the best mobile apps...</a>
+												  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 67</i>What's the difference between...</a>
+												  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 0</i>What logos include hidden...</a>
+
+											  <div class="panel panel-default">
+											    <div id="collapse2a" class="panel-collapse collapse">
+											      <ul class="list-group">
+											        <a href="#" class="list-group-item">One</a>
+											        <a href="#" class="list-group-item">Two</a>
+											        <a href="#" class="list-group-item">Three</a>
+											      </ul>
+											    </div>
+
+											    <div class="panel-heading text-right">
+											        <a data-toggle="collapse" href="#collapse2a">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+											    </div>
+											  </div>
+											</div>
+										</div>
+
+									</div>
+<!-- DRUHY PANEL B -->
+									<div id="menu2b" class="tab-pane fade in">
+										<div class="panel-group">
+
+									<div class="list-group">
+										  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 5</i>How to make good logo?</a>
+										  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 8</i>What are the best mobile apps</a>
+										  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 17</i>What's the difference between</a>
+										  <a href="#" class="list-group-item"><i class="fa fa-comment-o" aria-hidden="true"> 71</i>What logos include hidden</a>
+
+									  <div class="panel panel-default">
+									    <div id="collapse2b" class="panel-collapse collapse">
+									      <ul class="list-group">
+									        <a href="#" class="list-group-item">One</a>
+											<a href="#" class="list-group-item">Two</a>
+											<a href="#" class="list-group-item">Three</a>
+									      </ul>
+									    </div>
+
+									    <div class="panel-heading text-right">
+									        <a data-toggle="collapse" href="#collapse2b">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+									    </div>
+
+									  </div>
+									</div>
+								</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+<!-- TRETI PANEL -->
+						<div class="col-md-4 col-sm-6">
+							<div class="main-panel">
+
+								<ul class="nav nav-tabs text-center" id="panel-3">
+									<li class="active"><a data-toggle="tab" href="#menu3a"><b>19</b><br>Following exams</a></li>
+									<li><a data-toggle="tab" href="#menu3b"><b>88</b><br>Done exams</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<div id="menu3a" class="tab-pane fade in active">
+										<div class="panel-group">
+
+											<div class="list-group">
+												<a href="#" class="list-group-item">
+												  	<div class="progress progress-vertical">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height:70%"></div>
+													</div>
+													Junior web designer
+												</a>
+
+												<a href="#" class="list-group-item">
+												  	<div class="progress progress-vertical">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="height:20%"></div>
+													</div>
+													Which is the best way to pass...
+												</a>
+
+												<a href="#" class="list-group-item">
+												  	<div class="progress progress-vertical">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="height:35%"></div>
+													</div>
+													What are the great example...
+												</a>
+
+												<a href="#" class="list-group-item">
+												  	<div class="progress progress-vertical">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height:90%"></div>
+													</div>
+													Why is consistency important...
+												</a>
+
+											  <div class="panel panel-default">
+											    <div id="collapse3a" class="panel-collapse collapse">
+											      <ul class="list-group">
+											        <a href="#" class="list-group-item">One</a>
+											        <a href="#" class="list-group-item">Two</a>
+											        <a href="#" class="list-group-item">Three</a>
+											      </ul>
+											    </div>
+
+											    <div class="panel-heading text-right">
+											        <a data-toggle="collapse" href="#collapse3a">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+											    </div>
+
+											  </div>
+											</div>
+										</div>
+
+									</div>
+
+									<div id="menu3b" class="tab-pane fade in">
+										<div class="panel-group">
+
+									<div class="list-group">
+										<a href="#" class="list-group-item">
+										  	<div class="progress progress-vertical">
+											  	<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height:50%"></div>
+											</div>
+											Different Types of Skills
+										</a>
+
+										<a href="#" class="list-group-item">
+										  	<div class="progress progress-vertical">
+											  	<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="height:90%"></div>
+											</div>
+											How to Include Skills Resume
+										</a>
+
+										<a href="#" class="list-group-item">
+										  	<div class="progress progress-vertical">
+											  	<div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="height:55%"></div>
+											</div>
+											Top Skills Employers Want
+										</a>
+
+										<a href="#" class="list-group-item">
+										  	<div class="progress progress-vertical">
+											  	<div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="height:30%"></div>
+											</div>
+											Skills Listed By Type
+										</a>
+
+									  <div class="panel panel-default">
+									    <div id="collapse3b" class="panel-collapse collapse">
+									      <ul class="list-group">
+									        <a href="#" class="list-group-item">One</a>
+											<a href="#" class="list-group-item">Two</a>
+											<a href="#" class="list-group-item">Three</a>
+									      </ul>
+									    </div>
+
+									    <div class="panel-heading text-right">
+									        <a data-toggle="collapse" href="#collapse3b">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+									    </div>
+									  </div>
+									</div>
+								</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+
+								<div class="col-md-4">
+									<div class="panel-group">
+										<div class="panel panel-default graphs">
+											<div class="panel-body">
+												<h5>Experience gained</h5>
+													<div class="progress progress-vertical">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height:75%"></div>
+													  	<p>Course</p>
+													</div>
+													<div class="progress progress-vertical">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height:25%"></div>
+													    <p>Question</p>
+													</div>
+													<div class="progress progress-vertical">
+													  	<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height:50%"></div>
+													   	<p>Exam</p>
+													</div>
+													<div class="progress-vertical">
+														<div class="progress-number">
+															<h2>+142</h2>
+															<p>last month</p>
+														</div>
+													</div>
+											</div>
+										</div>
+
+									<div class="panel-group">
+										<div class="panel panel-default graphs">
+											<div class="panel-body">
+												<h5>Experience per day</h5>
+											</div>
+											<img src="img/graph.png" alt="graph" style="width: 270px">
+										</div>
+									</div>
+									</div>
+
+								</div>
+
+								<div class="col-md-8">
+
+									<div class="panel-group">
+										  <div class="panel panel-default activity">
+										    <div class="panel-body"><h5>Friend activity</h5></div>
+													<div class="list-group">
+														  <a href="#" class="list-group-item">
+															<img src="img/portrait-1.jpg" alt="1">
+														  	<span>Shawn Peterson</span>&nbsp;Finished the course: <b>Basic for UX Designer</b>
+														  	<i class="fa fa-clock-o" aria-hidden="true">&nbsp;9:30 PM</i>
+														  </a>
+														  <a href="#" class="list-group-item">
+															<img src="img/portrait-5.jpg" alt="2">
+														  	<span>Mary V. Robinson</span>&nbsp;Asked question: <b>What is best grid for desktop</b>
+														  	<i class="fa fa-clock-o" aria-hidden="true">&nbsp;9:20 PM</i>
+														  </a>
+														  <a href="#" class="list-group-item">
+															<img src="img/portrait-3.jpeg" alt="3">
+														  	<span>Joe Ramos</span>&nbsp;Finished the exam: <b>Junior web designer</b>
+														  	<i class="fa fa-clock-o" aria-hidden="true">&nbsp;7:45 PM</i>
+														  </a>
+														  <a href="#" class="list-group-item">
+															<img src="img/portrait-4.jpg" alt="4">
+														  	<span>Sean Walker Answered</span>&nbsp;question: <b>How to make good logo?</b>
+														  	<i class="fa fa-clock-o" aria-hidden="true">&nbsp;11:15 AM</i>
+														  </a>
+
+														  <div class="panel panel-default">
+														    <div id="collapse-friends" class="panel-collapse collapse">
+														      <ul class="list-group">
+														        <a href="#" class="list-group-item">
+																	<img src="img/portrait-2.jpg" alt="5">
+														        	<span>Barack Obama</span>&nbsp;Asked question: <b>What is best grid for desktop</b>
+														  			<i class="fa fa-clock-o" aria-hidden="true">&nbsp;8:20 PM</i>
+														  		</a>
+															  	<a href="#" class="list-group-item">
+																	<img src="img/portrait-6.jpg" alt="6">
+															  		<span>Leonardo Da Vinci</span>&nbsp;Finished the exam: <b>Junior web designer</b>
+															  		<i class="fa fa-clock-o" aria-hidden="true">&nbsp;12:45 PM</i>
+															  	</a>
+															  	<a href="#" class="list-group-item">
+																	<img src="img/portrait-1.jpg" alt="1">
+															  		<span>Connor McDavid</span>&nbsp;question: <b>How to make good logo?</b>
+															  		<i class="fa fa-clock-o" aria-hidden="true">&nbsp;6:15 AM</i>
+															  	</a>
+														      </ul>
+														    </div>
+
+														    <div class="panel-heading text-right">
+														        <a data-toggle="collapse" href="#collapse-friends">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+														    </div>
+
+														  </div>
+													</div>
+										  </div>
+									  </div>
+									</div>
+								</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+		</main>
+<!-- koniec container all -->
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
 </html>
