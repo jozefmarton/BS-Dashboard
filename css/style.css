@@ -235,21 +235,33 @@ main section {
   }
 }
 
-/* line 203, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 198, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+.navbar .navbar-header .navbar-nav .badge {
+  position: absolute;
+  background-color: #e74b3b;
+  padding: 2px 4px;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  right: 5px;
+  top: -5px;
+}
+
+/* line 213, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .navbar .navbar-form .btn {
   border: none;
   font-size: 18px;
   color: #7f8c8d;
 }
 
-/* line 208, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 218, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .navbar .navbar-form .form-control {
   border: none;
   box-shadow: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 201, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 211, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .navbar-form {
     width: 195px;
     position: absolute;
@@ -258,7 +270,12 @@ main section {
   }
 }
 
-/* line 220, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 230, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+.navbar.affix {
+  position: relative;
+}
+
+/* line 234, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .navbar .user {
   display: block;
   width: 100%;
@@ -266,33 +283,33 @@ main section {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 225, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 239, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block {
     text-align: left;
   }
-  /* line 229, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 243, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block img {
     float: left;
     margin-right: 30px;
   }
-  /* line 234, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 248, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block h3 {
     text-transform: uppercase;
     font-weight: bold;
   }
-  /* line 239, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 253, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block h4 {
     font-size: 16px;
     color: #bdc3c7;
   }
-  /* line 243, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 257, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block h4 i {
     margin: 13px;
   }
 }
 
 @media only screen and (min-width: 768px) and (min-width: 768px) {
-  /* line 248, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 262, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block .user-info {
     position: relative;
     top: 9px;
@@ -300,89 +317,101 @@ main section {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 255, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 269, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block .dbicon-star {
     font-size: 16px;
     color: #bdc3c7;
     letter-spacing: -5px;
   }
-  /* line 261, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 275, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block p {
     color: #bdc3c7;
     font-size: 16px;
     line-height: 18px;
   }
-  /* line 266, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 280, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-block p i {
     margin-right: 7px;
   }
 }
 
+/* line 287, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+.navbar .user .user-icons .tooltip-inner {
+  font-size: 12px;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+  border-radius: 3px;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 272, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  /* line 286, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
   .navbar .user .user-icons {
     z-index: 10;
     float: right;
     position: relative;
     top: 15px;
+    right: 18px;
   }
 }
 
-/* line 282, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 302, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .navbar .user .btn-link {
   width: 40px;
   height: 40px;
-  border: 2px solid #bdc3c7;
+  border: 2px solid rgba(155, 163, 175, 0.5);
   color: #9ba3af;
   font-size: 18px;
   border-radius: 50px;
+  padding: 8.5px 4px;
 }
 
-/* line 289, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 310, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .navbar .user .btn-link:hover {
   background-color: #2dcb71;
   border: none;
   color: #fff;
+  border: 2px solid #2dcb71;
 }
 
-/* line 299, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 321, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 #content-nav {
   margin-top: 40px;
 }
 
-/* line 303, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
-#content-nav li:after {
-  content: '';
-  display: block;
-  border-bottom: 4px solid #2dcb71;
-  transform: scaleX(0);
-  transition: transform .8s ease-in-out;
-}
-
-/* line 310, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
-#content-nav li:hover:after {
-  transform: scaleX(1);
-}
-
-/* line 314, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 326, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 #content-nav li a {
   text-transform: uppercase;
   font-weight: bold;
   color: #2c3e50;
 }
 
-/* line 325, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 330, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+#content-nav li a:after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 15px;
+  border-bottom: 4px solid #2dcb71;
+  transform: scaleX(0);
+  transition: transform .4s ease-in-out;
+}
+
+/* line 339, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+#content-nav li a:hover:after {
+  transform: scaleX(1);
+}
+
+/* line 349, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 #my-navbar ul li a {
   font-weight: bold;
   font-size: 20px;
 }
 
-/* line 335, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 359, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group {
   position: relative;
 }
 
-/* line 338, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 362, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group a {
   padding-top: 17.5px;
   padding-bottom: 17.5px;
@@ -392,7 +421,7 @@ main section {
   border-left: none;
 }
 
-/* line 346, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 370, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group a:before {
   content: '';
   display: block;
@@ -402,38 +431,38 @@ main section {
   left: 0;
   bottom: 0;
   transform: scaleY(0);
-  transition: transform .8s ease-in-out;
+  transition: transform .4s ease-in-out;
 }
 
-/* line 358, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 382, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group a:hover, .main-panel .panel-group .list-group a:focus {
   color: #000;
 }
 
-/* line 362, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 386, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group a:hover:before {
   transform: scaleY(1);
 }
 
-/* line 367, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 391, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group i {
   padding: 0px 10px;
   font-weight: bold;
 }
 
-/* line 371, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 395, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group .panel-heading {
   background-color: #fff;
 }
 
-/* line 374, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 398, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group .panel-heading a {
   font-weight: bold;
   color: #000;
   font-size: 12px;
 }
 
-/* line 381, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 405, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group .progress-vertical {
   display: inline-block;
   vertical-align: bottom;
@@ -447,7 +476,7 @@ main section {
   margin: 0 10px;
 }
 
-/* line 393, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 417, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group .progress-vertical .progress-bar {
   width: 100%;
   background-color: #19bb9b;
@@ -457,7 +486,7 @@ main section {
   display: block;
 }
 
-/* line 401, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 425, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .main-panel .panel-group .list-group .progress-vertical .progress-bar:before {
   content: attr(aria-valuenow) "%";
   display: block;
@@ -469,14 +498,14 @@ main section {
   font-size: 10px;
 }
 
-/* line 418, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 442, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .panel-body h5 {
   color: #7f8c8d;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* line 425, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 449, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .list-group a {
   color: #bdc3c7;
   font-size: 12px;
@@ -486,7 +515,7 @@ main section {
   border-left: none;
 }
 
-/* line 433, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 457, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .list-group a:before {
   content: '';
   display: block;
@@ -499,12 +528,12 @@ main section {
   transition: transform .8s ease-in-out;
 }
 
-/* line 444, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 468, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .list-group a:hover:before {
   transform: scaleY(1);
 }
 
-/* line 448, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 472, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .list-group a img {
   width: 29px;
   height: 29px;
@@ -512,46 +541,46 @@ main section {
   margin: 0px 8px;
 }
 
-/* line 455, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 479, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .list-group a span {
   text-transform: uppercase;
   color: #3498db;
 }
 
-/* line 460, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 484, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .list-group a b {
   color: #000;
 }
 
-/* line 463, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 487, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .activity .list-group a i {
   float: right;
   position: relative;
   top: 7px;
 }
 
-/* line 472, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 496, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs {
   width: 112%;
 }
 
-/* line 475, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 499, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs .panel-body {
   position: relative;
 }
 
-/* line 478, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 502, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs .panel-body h5 {
   color: #7f8c8d;
   font-weight: bold;
 }
 
-/* line 483, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 507, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs .panel-body .progress-number {
   width: 70px;
 }
 
-/* line 485, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 509, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs .panel-body .progress-number h2 {
   margin: 0;
   font-size: 34px;
@@ -560,7 +589,7 @@ main section {
   position: absolute;
 }
 
-/* line 494, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 518, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs .panel-body .progress-vertical {
   display: inline-block;
   width: 44px;
@@ -572,7 +601,7 @@ main section {
   position: relative;
 }
 
-/* line 504, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 528, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs .panel-body .progress-vertical p {
   color: #7f8c8d;
   position: relative;
@@ -583,12 +612,31 @@ main section {
   text-align: center;
 }
 
-/* line 513, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+/* line 537, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
 .graphs .panel-body .progress-vertical .progress-bar {
   background-color: #2dcb71;
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+/* line 548, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+.alert-placeholder {
+  position: fixed;
+  opacity: .9;
+  bottom: -5px;
+  width: 100%;
+  font-size: .8em;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* line 548, C:/Users/Dodo/Desktop/BS-Dashboard/scss/style.scss */
+  .alert-placeholder {
+    font-size: .9em;
+    width: 40vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /*# sourceMappingURL=../css/style.map */
