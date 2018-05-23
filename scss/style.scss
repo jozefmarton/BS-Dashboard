@@ -56,18 +56,21 @@ aside {
                 text-transform: uppercase;
                 margin: 0;
                 position: relative;
-                top: 18px;
+                top: 20px;
                 left: 10px;
             }
         }
     }
 
     nav {
-        .active {
-            // font-size: 20px;
-        }
+        .nav-stacked {
+
         li {
             margin: 10px 0;
+            :hover {
+                background-color: #243342;
+                transition: .4s;
+            }
 
             a {
                 text-align: left;
@@ -85,8 +88,12 @@ aside {
                     padding: 0 26px 0 26px;
                     position: relative;
                     top: 5px;
+                    &:hover {
+                        color: $primary;
+                    }
                 }
             }
+        }
         }
     }
 }
@@ -270,6 +277,9 @@ main {
                 font-size: 16px;
                 color: $grey;
                 letter-spacing: -5px;
+                &.red {
+                    color: #e74b3b;
+                }
             }
 
             p {
@@ -355,6 +365,36 @@ main {
 }
 
 .main-panel {
+    #menu1a {
+        a:before {
+            border-left: 4px solid $orange;
+        }
+    }
+    #menu1b {
+        a:before {
+            border-left: 4px solid $orange;
+        }
+    }
+    #menu2a {
+        a:before {
+            border-left: 4px solid $purple;
+        }
+    }
+    #menu2b {
+        a:before {
+            border-left: 4px solid $purple;
+        }
+    }
+    #menu3a {
+        a:before {
+            border-left: 4px solid $green;
+        }
+    }
+    #menu3b {
+        a:before {
+            border-left: 4px solid $green;
+        }
+    }
     .panel-group {
         .list-group {
             position: relative;
@@ -370,7 +410,7 @@ main {
                 &:before {
                     content: '';
                     display: block;
-                    border-left: 4px solid $primary;
+                    border-left: 4px solid $orange;
                     height: 100%;
                     position: absolute;
                     left: 0;
@@ -386,6 +426,7 @@ main {
                 &:hover:before {
                     transform: scaleY(1);
                 }
+
             }
 
             i {
@@ -393,15 +434,20 @@ main {
                 font-weight: bold;
             }
             .panel-heading {
-
                      background-color: $white;
                    a {
                     font-weight: bold;
                      color: #000;
                      font-size: 12px;
+                     &:hover:before {
+                        border-left: none;
+                        transform:scaleY(0);
+                    }
                    }
             }
-
+            .progress {
+                height: 16.8px;
+            }
             .progress-vertical {
                 display: inline-block;
                 vertical-align: bottom;
@@ -449,8 +495,8 @@ main {
         a {
             color: $grey;
             font-size: 12px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
             font-weight: bold;
             border-left: none;
 
@@ -463,7 +509,7 @@ main {
                     left: 0;
                     bottom: 0;
                     transform: scaleY(0);
-                    transition: transform .8s ease-in-out;
+                    transition: transform .4s ease-in-out;
                 }
                 &:hover:before {
                     transform: scaleY(1);
@@ -490,19 +536,33 @@ main {
                 top: 7px;
             }
         }
+        .panel-heading {
+                     background-color: $white;
+                   a {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-weight: bold;
+                     color: #000;
+                     font-size: 12px;
+                     &:hover:before {
+                        border-left: none;
+                        transform:scaleY(0);
+                    }
+                   }
+            }
     }
 }
 
 .graphs {
-
-    width: 112%;
+    @media #{$sm} {
+        width: 112%;
+        padding-bottom: 15px;
+    }
     .panel-body {
         position: relative;
-        // margin: 25px 0;
         h5 {
             color: $text;
             font-weight: bold;
-            // text-transform: uppercase;
         }
         .progress-number {
             width: 70px;

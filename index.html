@@ -18,13 +18,13 @@
 		<aside class="hidden-xs hidden-sm">
 			<header class="header">
 				<div class="avatar">
-					<img src="img/avatar.svg" alt="avatar" style="width: 48px; height: 48px; border-radius: 50px;">
-					<h2>Hoang Nguyen</h2>
+					<img src="img/avatar-xs.png" alt="avatar" style="width: 48px; height: 48px; border-radius: 50px;">
+					<h2>Jozef Marton</h2>
 				</div>
 			</header>
 			<nav>
 				<ul class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#"><i class="dbicon-dash"></i>Dashboard</a></li>
+					<li><a href="#"><i class="dbicon-dash"></i>Dashboard</a></li>
 					<li><a href="#"><i class="dbicon-course"></i>Course</a></li>
 					<li><a href="#"><i class="dbicon-exam"></i>Exam</a></li>
 					<li><a href="#"><i class="dbicon-question"></i>Q&A</a></li>
@@ -71,18 +71,18 @@
 
 						    <div class="nav navbar-nav user">
 						    	<div class="user-icons">
-	                                <a href="" class="btn navbar-btn btn-link" data-tooltip data-placement="bottom" title="Edit"><i class="dbicon-pencil"></i></a>
+	                                <a href="" class="btn navbar-btn btn-link" data-toggle="modal" data-target="#myModal-2" data-tooltip data-placement="bottom" title="Edit"><i class="dbicon-pencil"></i></a>
 	                                <button type="button" class="btn navbar-btn btn-link" data-toggle="modal" data-target="#myModal" data-tooltip data-placement="bottom" title="Log&nbsp;out"><i class="dbicon-logout"></i></button>
                                 </div>
 
 								<div class="user-block hidden-xs">
-									<img src="img/avatar.svg" alt="avatar" style="border-radius: 50%;">
+									<img src="img/avatar.png" alt="avatar" style="border-radius: 50%;">
 									<div class="user-info">
 		                            	<h3>
-		                            		Hoang Nguyen
-		                            		<i class="dbicon-star"></i>
-		                            		<i class="dbicon-star"></i>
-		                            		<i class="dbicon-star"></i>
+		                            		Jozef Marton
+		                            		<i class="dbicon-star red"></i>
+		                            		<i class="dbicon-star red"></i>
+		                            		<i class="dbicon-star red"></i>
 		                            		<i class="dbicon-star"></i>
 		                            		<i class="dbicon-star"></i>
 		                            	</h3>
@@ -123,7 +123,7 @@
 									<div id="menu1a" class="tab-pane fade in active">
 										<div class="panel-group">
 
-											<div class="list-group">
+											<div class="list-group panel-orange">
 												  <a href="#" class="list-group-item">Basic for UX designer</a>
 												  <a href="#" class="list-group-item">10 steps to improve your wireframe</a>
 												  <a href="#" class="list-group-item">A Better Way To Request App Ratings </a>
@@ -139,7 +139,7 @@
 											    </div>
 
 											    <div class="panel-heading text-right">
-											        <a data-toggle="collapse" href="#collapse1a">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+											        <a data-toggle="collapse" href="#collapse1a" class="no-hover">Show more <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
 											    </div>
 
 											  </div>
@@ -483,9 +483,10 @@
 
 	<!-- MODAL WINDOWS -->
 	<div id="myModal" class="modal fade in" role="dialog">
-  <div class="modal-dialog modal-sm">
+  		<div class="modal-dialog modal-sm">
 
     <!-- Modal content-->
+    <!-- LOGOUT MODAL -->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -499,7 +500,26 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+</div>
+</div>
 
+<!-- EDIT MODAL -->
+<div id="myModal-2" class="modal fade in" role="dialog">
+  		<div class="modal-dialog modal-sm">
+  			<!-- CONTENT -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Edit</h4>
+      </div>
+      <div class="modal-body">
+        <p>Do you wanna edit something?</p>
+      </div>
+      <div class="modal-footer">
+      	<a href="" class="btn btn-warning pull-left">Edit</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
 
