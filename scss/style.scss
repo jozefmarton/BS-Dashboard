@@ -1,7 +1,5 @@
 @import '_variables.scss';
 
-
-
 *,
 *:before,
 *:after {
@@ -26,7 +24,7 @@ body {
     background-color: #ebeff1;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     @media #{$sm} {
-    margin: 5vh auto;
+        margin: 5vh auto;
         height: 90vh;
     }
 }
@@ -65,35 +63,35 @@ aside {
     nav {
         .nav-stacked {
 
-        li {
-            margin: 10px 0;
-            :hover {
-                background-color: #243342;
-                transition: .4s;
-            }
-
-            a {
-                text-align: left;
-                color: rgb(149,165,166);
-                text-transform: uppercase;
-                font-weight: bold;
-
-                &:hover,
-                &:focus {
-                    color: $white;
+            li {
+                margin: 10px 0;
+                :hover {
+                    background-color: #243342;
+                    transition: .4s;
                 }
 
-                i {
-                    font-size: 20px;
-                    padding: 0 26px 0 26px;
-                    position: relative;
-                    top: 5px;
-                    &:hover {
-                        color: $primary;
+                a {
+                    text-align: left;
+                    color: rgb(149, 165, 166);
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    &:hover,
+                    &:focus {
+                        color: $white;
+                    }
+
+                    i {
+                        font-size: 20px;
+                        padding: 0 26px 0 26px;
+                        position: relative;
+                        top: 5px;
+                        &:hover {
+                            color: $primary;
+                        }
                     }
                 }
             }
-        }
         }
     }
 }
@@ -119,41 +117,41 @@ main {
     #panel-1 li {
         :hover,
         :focus {
-                color: $orange;
-            }
+            color: $orange;
+        }
     }
 
     #panel-2 li {
         :hover,
         :focus {
-                color: $purple;
-            }
+            color: $purple;
+        }
     }
 
     #panel-3 li {
         :hover,
         :focus {
-                color: $green;
-            }
+            color: $green;
+        }
     }
 
 
     .nav.nav-tabs {
         li {
-        width: 50%;
+            width: 50%;
 
-        b {
-            font-size: 34px;
-            line-height: 18px;
-        }
-        a {
-            padding: 20px 0 10px 0;
-            color: $grey;
-            margin: 0;
-            font-size: 12px;
+            b {
+                font-size: 34px;
+                line-height: 18px;
+            }
+            a {
+                padding: 20px 0 10px 0;
+                color: $grey;
+                margin: 0;
+                font-size: 12px;
 
+            }
         }
-    }
     }
 
     section {
@@ -167,13 +165,13 @@ main {
 }
 
 .navbar {
-	background-color: $white;
-	margin-bottom: 0;
-	position: relative;
-	max-height: none;
+    background-color: $white;
+    margin-bottom: 0;
+    position: relative;
+    max-height: none;
     .header {
         @media #{$xs} {
-        border-bottom: 1px solid $grey;
+            border-bottom: 1px solid $grey;
         }
     }
 
@@ -199,8 +197,8 @@ main {
             z-index: 10;
             padding-left: 2em;
             @media #{$xs} {
-                    top: 30px;
-                }
+                top: 30px;
+            }
             @media #{$sm} {
                 top: 30px;
             }
@@ -217,24 +215,24 @@ main {
         }
     }
 
-	.navbar-form {
+    .navbar-form {
 
         .btn {
             border: none;
             font-size: 18px;
             color: $text;
-            }
+        }
         .form-control {
             border: none;
             box-shadow: none;
         }
         @media #{$xs} {
-        width: 195px;
-		position: absolute;
-		top: 20px;
-		right: 0;
+            width: 195px;
+            position: absolute;
+            top: 20px;
+            right: 0;
         }
-	}
+    }
 
     .user {
         display: block;
@@ -245,52 +243,52 @@ main {
             @media #{$xs} {
                 text-align: left;
 
-            img {
-                float: left;
-                margin-right: 30px;
-            }
-
-            h3 {
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-
-            h4 {
-                font-size: 16px;
-                color: $grey;
-
-                i {
-                    margin: 13px;
+                img {
+                    float: left;
+                    margin-right: 30px;
                 }
 
-            }
-            .user-info {
+                h3 {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+
+                h4 {
+                    font-size: 16px;
+                    color: $grey;
+
+                    i {
+                        margin: 13px;
+                    }
+
+                }
+                .user-info {
                     @media #{$xs} {
-                    position: relative;
-                    top: 9px;
+                        position: relative;
+                        top: 9px;
                     }
                 }
 
-            .dbicon-star {
-                font-size: 16px;
-                color: $grey;
-                letter-spacing: -5px;
-                &.red {
-                    color: #e74b3b;
+                .dbicon-star {
+                    font-size: 16px;
+                    color: $grey;
+                    letter-spacing: -5px;
+                    &.red {
+                        color: #e74b3b;
+                    }
                 }
-            }
 
-            p {
-                color: $grey;
-                font-size: 16px;
-                line-height: 18px;
+                p {
+                    color: $grey;
+                    font-size: 16px;
+                    line-height: 18px;
 
-                i {
-                    margin-right: 7px;
+                    i {
+                        margin-right: 7px;
+                    }
                 }
             }
         }
-    }
         .user-icons {
             margin-left: 30px;
             .tooltip-inner {
@@ -308,10 +306,10 @@ main {
             }
         }
 
-		.btn-link {
+        .btn-link {
             width: 40px;
             height: 40px;
-            border: 2px solid rgba(155,163,175,0.5);
+            border: 2px solid rgba(155, 163, 175, 0.5);
             color: $light-grey;
             font-size: 18px;
             border-radius: 50px;
@@ -321,11 +319,11 @@ main {
                 border: none;
                 color: $white;
                 border: 2px solid $primary;
-             }
+            }
 
-		}
-	}
- }
+        }
+    }
+}
 
 #content-nav {
     margin-top: 40px;
@@ -335,15 +333,15 @@ main {
         a {
             text-transform: uppercase;
             font-weight: bold;
-            color: rgb(44,62,80);
+            color: rgb(44, 62, 80);
             &:after {
-            content: '';
-            display: block;
-            position: relative;
-            top: 15px;
-            border-bottom: 4px solid $primary;
-            transform: scaleX(0);
-            transition: transform .4s ease-in-out;
+                content: '';
+                display: block;
+                position: relative;
+                top: 15px;
+                border-bottom: 4px solid $primary;
+                transform: scaleX(0);
+                transition: transform .4s ease-in-out;
             }
             &:hover:after {
                 transform: scaleX(1);
@@ -420,7 +418,7 @@ main {
 
                 &:hover,
                 &:focus {
-                   color: #000;
+                    color: #000;
                 }
                 &:hover:before {
                     transform: scaleY(1);
@@ -433,16 +431,16 @@ main {
                 font-weight: bold;
             }
             .panel-heading {
-                     background-color: $white;
-                   a {
+                background-color: $white;
+                a {
                     font-weight: bold;
-                     color: #000;
-                     font-size: 12px;
-                     &:hover:before {
+                    color: #000;
+                    font-size: 12px;
+                    &:hover:before {
                         border-left: none;
-                        transform:scaleY(0);
+                        transform: scaleY(0);
                     }
-                   }
+                }
             }
             .progress {
                 height: 16.8px;
@@ -487,8 +485,7 @@ main {
     .panel-body h5 {
         color: $text;
         font-weight: bold;
-        text-transform: uppercase;
-        // font-size: 14px;
+        text-transform: uppercase; // font-size: 14px;
     }
     .list-group {
         a {
@@ -500,19 +497,19 @@ main {
             border-left: none;
 
             &:before {
-                    content: '';
-                    display: block;
-                    border-left: 4px solid $purple;
-                    height: 100%;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    transform: scaleY(0);
-                    transition: transform .4s ease-in-out;
-                }
-                &:hover:before {
-                    transform: scaleY(1);
-                }
+                content: '';
+                display: block;
+                border-left: 4px solid $purple;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: scaleY(0);
+                transition: transform .4s ease-in-out;
+            }
+            &:hover:before {
+                transform: scaleY(1);
+            }
 
             img {
                 width: 29px;
@@ -536,19 +533,19 @@ main {
             }
         }
         .panel-heading {
-                     background-color: $white;
-                   a {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    font-weight: bold;
-                     color: #000;
-                     font-size: 12px;
-                     &:hover:before {
-                        border-left: none;
-                        transform:scaleY(0);
-                    }
-                   }
+            background-color: $white;
+            a {
+                padding-left: 10px;
+                padding-right: 10px;
+                font-weight: bold;
+                color: #000;
+                font-size: 12px;
+                &:hover:before {
+                    border-left: none;
+                    transform: scaleY(0);
+                }
             }
+        }
     }
 }
 
@@ -619,4 +616,3 @@ main {
         transform: translateX(-50%);
     }
 }
-
