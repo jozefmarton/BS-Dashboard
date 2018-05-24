@@ -185,22 +185,24 @@ main {
                 height: 2em;
                 position: relative;
                 top: .7em;
+                left: 2em;
                 text-align: center;
                 @media #{$xs} {
                     height: 3em;
                     top: 23px;
+                    left: 0;
                 }
             }
         }
         .navbar-nav {
-            position: fixed;
+            position: absolute;
             z-index: 10;
             padding-left: 2em;
             @media #{$xs} {
                     top: 30px;
                 }
             @media #{$sm} {
-                top: 70px;
+                top: 30px;
             }
             .badge {
                 position: absolute;
@@ -233,10 +235,6 @@ main {
 		right: 0;
         }
 	}
-
-    &.affix {
-        position: relative;
-    }
 
     .user {
         display: block;
@@ -294,6 +292,7 @@ main {
         }
     }
         .user-icons {
+            margin-left: 30px;
             .tooltip-inner {
                 font-size: 12px;
                 font-family: 'Proxima Nova', Georgia, sans-serif;
@@ -332,7 +331,7 @@ main {
     margin-top: 40px;
 
     li {
-
+        text-align: center;
         a {
             text-transform: uppercase;
             font-weight: bold;
@@ -554,13 +553,15 @@ main {
 }
 
 .graphs {
+    text-align: center;
+    padding-bottom: 15px;
     @media #{$sm} {
         width: 112%;
-        padding-bottom: 15px;
     }
     .panel-body {
         position: relative;
         h5 {
+            text-align: left;
             color: $text;
             font-weight: bold;
         }
